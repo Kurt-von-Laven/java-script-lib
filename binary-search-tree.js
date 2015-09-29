@@ -131,7 +131,8 @@ BinarySearchTree.prototype.Node.prototype.get = function (key) {
 
 /* Inserts the given key, value pair in the subtree rooted at this node. Creates
  * a new node with the given key and value and inserts it in the appropriate
- * position. Throws an exception if the given key is already in this subtree.
+ * position. Returns the created node. Throws an exception if the given key is
+ * already in this subtree.
  */
 BinarySearchTree.prototype.Node.prototype.insert = function (key, value) {
     for (var currNode = this; true; ) {
@@ -289,8 +290,9 @@ BinarySearchTree.prototype.get = function (key) {
 };
 
 /* Inserts the given key, value pair in this tree. Creates a new node with the
- * given key and value and inserts it in the appropriate position. Throws an
- * exception if the given key is already present in this tree.
+ * given key and value and inserts it in the appropriate position. Returns the
+ * created node. Throws an exception if the given key is already present in this
+ * tree.
  */
 BinarySearchTree.prototype.insert = function (key, value) {
     if (this.root === null) {

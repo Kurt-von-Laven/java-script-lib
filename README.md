@@ -43,8 +43,9 @@ key is not present in this tree.
 #### insert(key, value)
 
 Inserts the given key, value pair in this tree. Creates a new node with the
-given key and value and inserts it in the appropriate position. Throws an
-exception if the given key is already present in this tree.
+given key and value and inserts it in the appropriate position. Returns the
+created node. Throws an exception if the given key is already present in this
+tree.
 
 #### remove(key)
 
@@ -112,7 +113,8 @@ Returns null if there is no such node.
 
 Inserts the given key, value pair in the subtree rooted at this node. Creates
 a new node with the given key and value and inserts it in the appropriate
-position. Throws an exception if the given key is already in this subtree.
+position. Returns the created node. Throws an exception if the given key is
+already in this subtree.
 
 #### remove()
 
